@@ -1,6 +1,6 @@
 ### client.c: An Overview
 
-This file appears to define the operations of a client in a client-server model. Its primary role is to communicate with a server over UNIX domain sockets and synchronize its copy of certain network data structures like routing tables and MAC lists.
+This file  define the operations of a client in a client-server model. Its primary role is to communicate with a server over UNIX domain sockets and synchronize its copy of certain network data structures like routing tables and MAC lists.
 
 ---
 
