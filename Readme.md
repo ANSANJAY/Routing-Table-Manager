@@ -94,7 +94,31 @@ Achieve data synchronization between processes running on the same machine using
 1. Clone this repo: `git clone https://github.com/ANSANJAY/Routing-Table-Manager.git`.
 2. Navigate to the project directory: `cd project-directory`.
 3. Build the project: `make`.
-4. Execute the main program: `./main`.
+4. Execute the server  program: `./server` and `./client` to  and you will be prompted with options as follows 
+
+```bash 
+[anamika@Ana Routing-Table-Manager]$ ./server
+Please select from the following options:
+1.CREATE <Destination IP> <Mask (0-32)> <Gateway IP> <OIF>
+2.UPDATE <Destination IP> <Mask (0-32)> <New Gateway IP> <New OIF>
+3.DELETE <Destination IP> <Mask (0-32)>
+4.CREATE <MAC>
+5.DELETE <MAC>
+6.SHOW
+7.FLUSH
+```
+
+## Sample output
+
+## server
+
+![](/images/Screenshot%20from%202023-08-25%2023-22-36.png)
+
+## client
+
+![](./images/Screenshot%20from%202023-08-25%2023-26-11.png)
+
+
 
 ## License 📜
 

@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
-DEPSRC = DLL/dll.c MAC/mac-list.c Routing-Table/routing-table.c Sync/sync.c
+DEPSRC = DLL/dll.c Mac-List/mac-list.c Routing-Table/routing-table.c Sync/sync.c
 
 .PHONY: dll mac-list routing-table sync shm_ip
 
@@ -19,7 +19,7 @@ dll:
 	# $(CC) $(CFLAGS) DLL/main.c DLL/dll.c -o DLL/main
 
 mac-list: dll shm_ip
-	$(CC) $(CFLAGS) -c MAC/mac-list.c -o MAC/mac-list.o
+	$(CC) $(CFLAGS) -c Mac-List/mac-list.c -o Mac-List/mac-list.o
 
 routing-table: dll
 	$(CC) $(CFLAGS) -c Routing-Table/routing-table.c -o  Routing-Table/routing-table.o
@@ -31,4 +31,4 @@ shm_ip:
 	$(CC) $(CFLAGS) -c shm_ip.c -o shm_ip.o
 
 clean:
-	rm -f client server DLL/dll.o MAC/mac-list.o Routing-Table/routing-table.o shm_ip.o
+	rm -f client server DLL/dll.o Mac-List/mac-list.o Routing-Table/routing-table.o shm_ip.o
